@@ -1,0 +1,98 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+  background: #f4f4f4;
+}
+
+.App {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+h1 {
+  color: #1e1e1e;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.notebook {
+  padding: 1rem;
+}
+
+.cell {
+  position: relative;
+  margin-bottom: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #fff;
+  height: 200px;
+}
+
+.markdown-cell {
+  border-left: 5px solid #000;
+}
+
+.code-cell {
+  background-color: #f7f7f7;
+}
+
+.code-cell pre {
+  margin: 0;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid #000;
+}
+
+.icon-container {
+  position: relative;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #1e1e1e;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon:disabled {
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-top: 2px solid #1e1e1e;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.content {
+  position: relative;
+}
